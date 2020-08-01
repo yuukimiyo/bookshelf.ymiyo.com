@@ -1,5 +1,5 @@
-# Design Theme for bookshelf.ymiyo.com
+# Site repository for bookshelf.ymiyo.com
 
 Check <a href="https://bookshelf.ymiyo.com">bookshelf.ymiyo.com</a>
 
-This theme is based on <a href="https://novela.narative.co" target="_blank">NOVELA by narative.co</a>.
+Using Gatsby custom theme based on <a href="https://novela.narative.co" target="_blank">NOVELA by narative.co</a>.
