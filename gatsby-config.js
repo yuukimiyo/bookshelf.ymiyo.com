@@ -3,41 +3,39 @@ require('dotenv').config();
 module.exports = {
   pathPrefix: `/bookshelf.ymiyo.com/`,
   siteMetadata: {
-    title: `Novela by Narative`,
-    name: `Narative`,
-    // siteUrl: `https://novela.narative.co`,
+    title: `Y.MIYO本棚`,
+    name: `yuuki miyoshi`,
+    copyrightDate: `2020`,
+    portfolioUrl: `https://yuukimiyoshi.info`,
     siteUrl: `https://yuukimiyo.github.io`,
-    description: `This is my description that will be used in the meta tags and important for search results`,
+    description: `管理人の読書想文を投稿しています。`,
     hero: {
-      heading: `Welcome to Novela, the simplest way to start publishing with Gatsby.`,
+      heading: `Y.MIYO本棚`,
+      subtitle: `個人の読書ログです`,
       maxWidth: 652,
     },
     social: [
+      /*
       {
         name: `twitter`,
-        url: `https://twitter.com/narative`,
-      },
-      {
-        name: `github`,
-        url: `https://github.com/narative`,
+        url: `https://twitter.com/yuuki_miyo`,
       },
       {
         name: `instagram`,
-        url: `https://instagram.com/narative.co`,
+        url: `https://instagram.com/yuuki.miyo`,
       },
+      */
       {
-        name: `linkedin`,
-        url: `https://www.linkedin.com/company/narative/`,
-      },
-      {
-        name: `dribbble`,
-        url: `https://dribbble.com/narativestudio`,
+        name: `github`,
+        url: `https://github.com/yuukimiyo`,
       },
     ],
   },
   plugins: [
     {
-      resolve: "@narative/gatsby-theme-novela",
+      // resolve: "@narative/gatsby-theme-novela",
+      // resolve: "gatsby-theme-bookshelfymiyo",
+      resolve: "gatsby-theme-novela-custom",
       options: {
         contentPosts: "content/posts",
         contentAuthors: "content/authors",
@@ -45,7 +43,7 @@ module.exports = {
         // basePath: "/bookshelf.yuukimiyoshi.com/",
         authorsPage: true,
         sources: {
-          // local: true,
+          local: false,
           contentful: true,
         },
       },
@@ -62,13 +60,6 @@ module.exports = {
         icon: `src/assets/favicon.png`,
       },
     },
-    /*
-    {
-      resolve: `gatsby-plugin-netlify-cms`,
-      options: {
-      },
-    },
-    */
     {
       resolve: 'gatsby-source-contentful',
       options: {
