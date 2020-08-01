@@ -22,6 +22,7 @@ workflows:
   build-and-deploy:
     jobs:
       - build-and-deploy:
+          context: bookshelf.ymiyo.com
           filters:
             branches:
               only:
