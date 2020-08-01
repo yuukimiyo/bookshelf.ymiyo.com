@@ -1,13 +1,15 @@
 require('dotenv').config();
 
 module.exports = {
-  pathPrefix: `/bookshelf.ymiyo.com/`,
+  // pathPrefix: `/bookshelf.ymiyo.com/`,
+  pathPrefix: `/`,
   siteMetadata: {
     title: `Y.MIYO本棚`,
     name: `yuuki miyoshi`,
     copyrightDate: `2020`,
     portfolioUrl: `https://yuukimiyoshi.info`,
-    siteUrl: `https://yuukimiyo.github.io`,
+    // siteUrl: `https://yuukimiyo.github.io`,
+    siteUrl: `https://bookshelf.ymiyo.com`,
     description: `管理人の読書想文を投稿しています。`,
     hero: {
       heading: `Y.MIYO本棚`,
