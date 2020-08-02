@@ -36,7 +36,6 @@ module.exports = {
   plugins: [
     {
       // resolve: "@narative/gatsby-theme-novela",
-      // resolve: "gatsby-theme-bookshelfymiyo",
       resolve: "gatsby-theme-novela-custom",
       options: {
         contentPosts: "content/posts",
