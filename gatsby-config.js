@@ -10,7 +10,7 @@ module.exports = {
     portfolioUrl: `https://yuukimiyoshi.info`,
     // siteUrl: `https://yuukimiyo.github.io`,
     siteUrl: `https://bookshelf.ymiyo.com`,
-    description: `管理人の読書想文を投稿しています。`,
+    description: `Y.MIYO本棚は管理人の個人的な読書ログサイトです。`,
     hero: {
       heading: `Y.MIYO本棚`,
       subtitle: `個人の読書ログです`,
