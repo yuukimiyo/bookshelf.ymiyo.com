@@ -17,7 +17,6 @@ workflows:
   build:
     jobs:
       - build:
-          context: bookshelf.ymiyo.com
           filters:
             branches:
               only:
