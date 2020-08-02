@@ -19,7 +19,7 @@ jobs:
             - run: yarn deploy
 
 workflows:
-  build-and-deploy:
+  build:
     jobs:
       - build-and-deploy:
           context: bookshelf.ymiyo.com
