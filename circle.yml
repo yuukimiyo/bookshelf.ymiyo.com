@@ -5,18 +5,16 @@ orbs:
 
 jobs:
   build:
-    executor:
-      name: node/default
+    docker:
+      - image: circleci/node@1.1.6
     steps:
       - checkout
-      - node/with-cache:
-          steps:
-            - run: git config --global user.name "yuukimiyo"
-            - run: git config --global user.email "yuuki.miyo@gmail.com"
-            - run: yarn
-            - run: yarn global add gatsby
-            - run: yarn test
-            - run: yarn deploy
+      - run: git config --global user.name "yuukimiyo"
+      - run: git config --global user.email "yuuki.miyo@gmail.com"
+      - run: yarn
+      - run: yarn global add gatsby
+      - run: yarn test
+      - run: yarn deploy
 
 workflows:
   build:
