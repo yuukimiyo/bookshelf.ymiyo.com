@@ -1,12 +1,9 @@
 version: 2.1
 
-orbs:
-  node: circleci/node@1.1.6
-
 jobs:
   build:
     docker:
-      - image: circleci/node@1.1.6
+      - image: circleci/node:14.7.0
     steps:
       - checkout
       - run: git config --global user.name "yuukimiyo"
